@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>isa hausaufgabe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <link href="css/datepicker.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.file-input.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="span6">
+            <a href="start.html"> <img style="margin-left: -35px;" src="img/logo.png" alt="Logo"></a>
+            <div id="contact" class="round-corner">
+                <h2>Kontakt</h2>
+                <div class="contact-data">
+                    <h3>Manfred Schwarz</h3>
+                    <p>Gebäude/Raum: 03/104</p>
+                    <p>Telefon: 0340 5197 1716</p>
+                    <p>Email: m.schwarz@design.hs-anhalt.de</p>
+                </div>
+                <div class="contact-data">
+                    <h3>Bernd Gödde</h3>
+                    <p>Gebäude/Raum: 03/115</p>
+                    <p>Telefon: 0340 5197 1715</p>
+                    <p>Email: b.goedde@design.hs-anhalt.de</p>
+                </div>
+                <div class="contact-data">
+                    <h3>Denis Geserick</h3>
+                    <p>Gebäude/Raum: 03/011</p>
+                    <p>Telefon: 0340 5197 1712</p>
+                    <p>d.geserick@design.hs-anhalt.de</p>
+                </div>
+            </div>
+        </div>
+        <div class="span6">
+            <div style="text-align: right;">
+                <a href="news.html"><img src="img/news.png"></a>
+                <a href="informationen.html"><img src="img/information-active.png"></a>
+            </div>
+            <div id="content" class="round-corner">
+                <h2>Technische Vorgaben</h2>
+                <img src="img/technische%20vorgaben.png">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer" class="container">
+    <div class="row">
+        <div class="span12">
+            <span class="footer-data">Hochschule Anhalt - Dessau/Roßlau</span>
+            <span class="footer-data">Impressum/Dekanat: 0340 51907 1700</span>
+            <span class="footer-data">Wache: 0340 5197 8003</span>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript">
+    $('input[type=file]').bootstrapFileInput();
+    $('.file-inputs').bootstrapFileInput();
+    $('#select-list li.enabled img.action').click(function (e) {
+        $(this).attr("src", "img/pfeilseite.png");
+        $("#select-item-content").slideDown();
+    });
+    $("#select-list .datepicker").click(function (e) {
+        $(this).find('img.action').attr("src", "img/pfeilseite.png");
+        $(this).datepicker('show');
+    });
+</script>
+</body>
+</html>

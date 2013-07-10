@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>isa hausaufgabe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <link href="css/datepicker.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.file-input.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="span6" id="sidebar">
+            <a href="start.html"> <img style="margin-left: -35px;" src="img/logo.png" alt="Logo"></a>
+            <div id="notice">
+                <p id="sidebar-header"></p>
+                <form action="">
+                    <p><input type="text"></p>
+                    <p><input type="text"></p>
+                    <p><input type="text"></p>
+                    <p><input type="text"></p>
+                    <p><input type="text"></p>
+                </form>
+                <img src="img/student.png" alt="subline student" id="subline">
+            </div>
+        </div>
+        <div class="span6">
+            <div style="text-align: right;">
+                <a href="news.html"><img src="img/news.png"></a>
+                <a href="informationen.html"><img src="img/information.png"></a>
+            </div>
+            <div id="content" class="round-corner">
+                <form>
+                    <p><input type="file" title="Datei hochladen"></p>
+                    <p><input type="file" title="Datei hochladen"></p>
+                    <div id="select-list" class="row">
+                        <div class="span4">
+                            <ul>
+                                <li class="enabled"><img src="img/art.png" alt=""> <img class="action" src="img/pfeiloben.png"> </li>
+                                <li><img src="img/papierart.png" alt=""> <img class="action" src="img/pfeiloben.png"> </li>
+                                <li><img src="img/papierformat.png" alt=""> <img class="action" src="img/pfeiloben.png"> </li>
+                                <li><img src="img/papierstärke.png" alt=""> <img class="action" src="img/pfeiloben.png"> </li>
+                                <li><img src="img/auflage.png" alt=""> <img class="action" src="img/pfeiloben.png"> </li>
+                                <li><img src="img/weiterverarbeitung.png" alt=""> <img class="action" src="img/pfeiloben.png"> </li>
+                                <li class="datepicker" data-date-format="dd.mm.yyyy"><img src="img/bestelldatum.png" alt=""> <img class="action" src="img/pfeiloben.png"> </li>
+                            </ul>
+                        </div>
+                        <div class="span1" id="select-item-content">
+                            <span class="select-item"><a href="#">Heft</a></span>
+                            <span class="select-item"><a href="#">Broschur</a></span>
+                            <span class="select-item"><a href="#">Flyer</a></span>
+                            <span class="select-item"><a href="#">Karte</a></span>
+                            <span class="select-item"><a href="#">Plakat</a></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div style="margin-top: 10px; text-align: right;">
+                <img src="img/senden.png" alt="abschicken">
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('input[type=file]').bootstrapFileInput();
+    $('.file-inputs').bootstrapFileInput();
+    $('#select-list li.enabled img.action').click(function (e) {
+        $(this).attr("src", "img/pfeilseite.png");
+        $("#select-item-content").slideDown();
+    });
+    $("#select-list .datepicker").click(function (e) {
+        $(this).find('img.action').attr("src", "img/pfeilseite.png");
+        $(this).datepicker('show');
+    });
+</script>
+</body>
+</html>

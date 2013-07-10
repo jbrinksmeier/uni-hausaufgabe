@@ -1,0 +1,39 @@
+body {background: #669c8f}
+.container {width: 1280px;}
+
+
+#left-upper-corner {height: 106px; background: url("../img/obenlinks.png") no-repeat;}
+#eyecatcher-top {height: 30px; background: url("../img/eyecatcher-top.jpg") no-repeat;}
+#right-upper-corner {height: 106px; background: url("../img/obenrechts.png") no-repeat;}
+#logo-area {padding: 20px 0px 75px 0px;}
+#logo {height: 300px; background: url("../img/logo.png") no-repeat;}
+#login-area {padding: 0px 0px 75px 0px;}
+#left-bottom-corner {height: 106px; background: url("../img/untenlinks.png") no-repeat;}
+#eyecatcher-bottom {height: 30px; background: url("../img/eyecatcher-bottom.jpg") no-repeat;}
+#right-bottom-corner {height: 106px; background: url("../img/untenrechts.png") no-repeat;}
+#sidebar{background: url("../img/ecke.png") no-repeat 8px bottom; height: 866px;}
+#sidebar-header {height: 40px; background: #fff; border-bottom: 2px #669c8f solid;}
+#notice {background: #fff; width: 438px; -webkit-border-radius: 20px;}
+#notice form {padding: 0px 20px;}
+#notice p {-webkit-border-top-left-radius: 20px; -webkit-border-top-right-radius: 20px;}
+
+#notice form p {border-bottom: 1px solid #669c8f;}
+#notice form input {border: none;}
+#notice form input:focus {outline: none;}
+#notice #subline {margin-left: 20px; }
+
+#content {background: #fff; padding: 20px; margin-top: 20px;}
+#content ul, #content li {list-style: none; padding: 15px 0px; margin: 0;}
+#select-list {margin-top: 30px;}
+#select-item-content {margin-top: 30px; padding: 5px; background: #669c8f; color: #fff; display: none;}
+#select-item-content a {color: #fff;}
+#select-item-content a:hover {color: #e2007a;}
+#select-item-content {box-shadow: 5px 5px 5px #000;}
+.float-right {float: right; margin-right: 50px;}
+.clear {clear: both;}
+.dataset-row {padding: 10px}
+#contact {background: #fff; padding: 10px;}
+.round-corner {-webkit-border-radius: 20px;}
+.contact-data {padding-bottom: 20px;}
+#footer {background: #000; color: #fff; padding: 10px; margin-top: 20px;}
+.footer-data {padding-right: 210px;}
